@@ -13,7 +13,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-app-backkendv2.onrender.com",
+    origin: "*",
     methods: ["GET", "POST"],
   },
 });
